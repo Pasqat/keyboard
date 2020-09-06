@@ -24,7 +24,7 @@ xkb_symbols "dvp" {
     key <AE07> { [ asterisk,        7                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE08> { [ exclam,      8,              onehalf                     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE09> { [ parenright,      9                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE10> { [ braceleft,       0                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE10> { [ braceright,       0                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE11> { [ bracketright,    percent,              exclamdown,      U2E18      ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };  // reversed interrobang
     key <AE12> { [ numbersign,      grave,          dead_grave                  ] };
     key <BKSP> { [ BackSpace,       BackSpace                                   ] };
