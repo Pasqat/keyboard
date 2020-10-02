@@ -1,9 +1,4 @@
-
-// programmer Dvorak, by Pasquale Matarrese <pasquale.matarrese at gmail dot com>
-// Symbols have been
-// placed in locations that give good hand-alternation and finger rolling with
-// symbols that usually follows, accented characters are possible for I18N.
-// Patch suggestions should be sent upstream.
+// Better programmer Dvorak, with number in noraml order and symbols where they should be
 partial alphanumeric_keys
 xkb_symbols "dvp" {
 
@@ -22,10 +17,11 @@ xkb_symbols "dvp" {
 
     // symbols row, right side
     key <AE07> { [ asterisk,        7                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE08> { [ exclam,      8,              onehalf                     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE09> { [ parenright,      9                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE10> { [ braceright,       0                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE11> { [ bracketright,    percent,              exclamdown,      U2E18      ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };  // reversed interrobang
+    key <AE08> { [ parenright,         8,              onehalf                     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+
+    key <AE09> { [ braceright,     9                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE10> { [ bracketright,      0                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE11> { [ exclam,    percent,              exclamdown,      U2E18      ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };  // reversed interrobang
     key <AE12> { [ numbersign,      grave,          dead_grave                  ] };
     key <BKSP> { [ BackSpace,       BackSpace                                   ] };
 
@@ -43,10 +39,11 @@ xkb_symbols "dvp" {
     key <AD12> { [ at,              asciicircum,    dead_circumflex, dead_caron ] };
 
     // home row, left side
-    key <AC01> { [ a,               A,              aring,           Aring      ] };
-    key <AC02> { [ o,               O,              oslash,          Ooblique   ] };
-    key <AC03> { [ e,               E,              ae,              AE         ] };
-    key <AC04> { [ u,               U,              eacute,          Eacute     ] };
+    key <AC01> { [ a,               A,              agrave,          Agrave      ] };
+    key <AC02> { [ o,               O,              ograve,          Ograve   ] };
+    key <AC03> { [ e,               E,              egrave,          Egrave         ] };
+    key <AC04> { [ u,               U,              ugrave,          Ugrave     ] };
+    key <AC05> { [ i,		    I,		    igrave,	     Igrave
 
     // home row, right side
     key <AC06> { [ d,               D,              eth,             ETH        ] };
@@ -61,5 +58,5 @@ xkb_symbols "dvp" {
     key <AB01> { [ apostrophe,      quotedbl,       dead_acute                  ] };
 
     // do NOT hardcode this switch; use lv3:ralt_switch option instead!
-    //include "level3(ralt_switch)"
+    include "level3(ralt_switch)"
 };
