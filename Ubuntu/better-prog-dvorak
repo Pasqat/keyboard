@@ -1,6 +1,6 @@
 // Better programmer Dvorak, with number in noraml order and symbols where they should be
 partial alphanumeric_keys
-xkb_symbols "dvp" {
+xkb_symbols "real-prog-dvorak" {
 
     include "us(dvorak)"
     name[Group1] = "English (programmer Dvorak)";
@@ -8,19 +8,19 @@ xkb_symbols "dvp" {
     //             Unmodified       Shift           AltGr            Shift+AltGr
     // symbols row, left side
     key <TLDE> { [ dollar,          asciitilde,     dead_tilde                  ] };
-    key <AE01> { [ ampersand,       1                                     ] };
+    key <AE01> { [ ampersand,       1                                           ] };
     key <AE02> { [ bracketleft,     2,              currency                    ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE03> { [ braceleft,       3,              cent                        ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE04> { [ parenleft,       4,              yen                         ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE05> { [ plus,       5,              EuroSign                    ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE05> { [ plus,       5,              EuroSign                         ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE06> { [ equal,           6,              sterling                    ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
 
     // symbols row, right side
     key <AE07> { [ asterisk,        7                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE08> { [ parenright,         8,              onehalf                     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE08> { [ parenright,         8,              onehalf                  ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
 
-    key <AE09> { [ braceright,     9                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
-    key <AE10> { [ bracketright,      0                                           ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE09> { [ braceright,     9                                            ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
+    key <AE10> { [ bracketright,      0                                         ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <AE11> { [ exclam,    percent,              exclamdown,      U2E18      ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };  // reversed interrobang
     key <AE12> { [ numbersign,      grave,          dead_grave                  ] };
     key <BKSP> { [ BackSpace,       BackSpace                                   ] };
@@ -40,10 +40,10 @@ xkb_symbols "dvp" {
 
     // home row, left side
     key <AC01> { [ a,               A,              agrave,          Agrave      ] };
-    key <AC02> { [ o,               O,              ograve,          Ograve   ] };
-    key <AC03> { [ e,               E,              egrave,          Egrave         ] };
-    key <AC04> { [ u,               U,              ugrave,          Ugrave     ] };
-    key <AC05> { [ i,		    I,		    igrave,	     Igrave
+    key <AC02> { [ o,               O,              ograve,          Ograve      ] };
+    key <AC03> { [ e,               E,              egrave,          Egrave      ] };
+    key <AC04> { [ u,               U,              ugrave,          Ugrave      ] };
+    key <AC05> { [ i,		    I,		    igrave,	     Igrave      ] };
 
     // home row, right side
     key <AC06> { [ d,               D,              eth,             ETH        ] };

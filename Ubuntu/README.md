@@ -11,8 +11,8 @@ after "dvorak-classic"
 ```
         <variant>
           <configItem>
-            <name>dvp</name>
-            <description>English (programmer Dvorak)</description>
+            <name>real-prog-dvorak</name>
+            <description>English (Real programmer Dvorak)</description>
             <vendor>Pasquale Matarrele</vendor>
           </configItem>
         </variant>
